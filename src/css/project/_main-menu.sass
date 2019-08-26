@@ -1,0 +1,117 @@
+.menu-opener
+  background: none
+  border: none
+  cursor: pointer
+  height: 30px
+  left: auto
+  margin: 0
+  padding: 0
+  position: absolute
+  right: 15px
+  top: 50%
+  transform: translateY(-50%)
+  width: 30px
+
+  @media(min-width: 992px)
+    display: none
+
+  &__burger
+    background-color: #db0032
+    display: inline-block
+    height: 2px
+    position: relative
+    vertical-align: middle
+    width: 30px
+
+    &::after,
+    &::before
+      background-color: #db0032
+      content: ""
+      height: 2px
+      left: auto
+      position: absolute
+      right: 0
+      width: 30px
+
+    &::after
+      top: 8px
+
+    &::before
+      top: -8px
+
+  &.is-active
+    .menu-opener__burger
+      transform: rotate(45deg)
+      width: 20px
+
+      &::before
+        top: 0
+        transform: rotate(-90deg)
+        width: 20px
+
+      &::after
+        display: none
+
+.main-menu
+  @media(max-width: 991px)
+    background-color: #fff
+    display: none
+    height: 100%
+    left: 0
+    overflow-y: auto
+    position: fixed
+    top: 65px
+    width: 100%
+
+  &.is-open
+    @media(max-width: 991px)
+      display: block
+
+  &__list
+    list-style: none
+    margin: 0
+
+    @media(max-width: 991px)
+      padding: 20px 40px 0
+
+    @media(min-width: 992px)
+      display: flex
+      padding: 0
+
+  &__item
+    @media(max-width: 991px)
+      margin-bottom: 15px
+
+    @media(min-width: 992px)
+      margin-right: 24px
+
+    @media(min-width: 1200px)
+      margin-right: 54px
+
+    &:last-child
+      margin-bottom: 0
+      margin-right: 0
+
+  &__link
+    color: #000
+    display: block
+    font-size: 18px
+    font-weight: 500
+    padding-top: 15px
+    padding-bottom: 15px
+    text-decoration: none
+
+    @media(min-width: 992px)
+      padding-top: 25px
+      padding-bottom: 25px
+
+    @media(min-width: 1200px)
+      padding-top: 30px
+      padding-bottom: 30px
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+    &.is-active
+      color: #db0032

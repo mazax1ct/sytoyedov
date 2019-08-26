@@ -1,0 +1,128 @@
+.header
+  background-color: #fff
+  position: relative
+
+  @media(max-width: 991px)
+    border-bottom: 5px solid #db0032
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 10
+
+  &::after
+    @media(min-width: 992px)
+      background-color: #db0032
+      bottom: 0
+      content: ''
+      height: 10px
+      left: 0
+      position: absolute
+      top: auto
+      width: 100%
+      z-index: 1
+
+  &__inner
+    align-items: center
+    display: flex
+    min-height: 60px
+    padding-top: 5px
+    padding-bottom: 5px
+    position: relative
+
+    @media(min-width: 992px)
+      align-items: flex-end
+      padding-top: 0
+      padding-bottom: 0
+
+  &__cart
+    margin-left: auto
+
+    @media(max-width: 991px)
+      margin-right: auto
+
+.logo
+  display: block
+  position: relative
+  width: 150px
+  z-index: 2
+
+  @media(min-width: 992px)
+    margin-right: 24px
+    width: 200px
+
+  @media(min-width: 1200px)
+    margin-right: 12px
+    width: 340px
+
+  img
+    position: relative
+    z-index: 2
+
+  &::before
+    background-color: #fff
+    content: ''
+    height: 100%
+    left: -5px
+    pointer-events: none
+    position: absolute
+    top: 0
+    width: calc(100% + 5px)
+    z-index: 1
+
+    @media(min-width: 992px)
+      left: -15px
+      width: calc(100% + 15px)
+
+    @media(min-width: 1200px)
+      left: -25px
+      width: calc(100% + 25px)
+
+.header-cart
+  align-items: center
+  color: #d61c38
+  display: flex
+  font-weight: 500
+  height: 40px
+  justify-content: space-between
+  text-decoration: none
+  width: 40px
+
+  @media(min-width: 992px)
+    height: 78px
+    width: 125px
+
+  &__icon
+    background: url('../images/icons/cart.png') no-repeat 0 0 / 100% 100% transparent
+    height: 27px
+    position: relative
+    width: 27px
+
+  &__qnt
+    align-items: center
+    background-color: #e4e4e4
+    border-radius: 50%
+    color: #000
+    display: flex
+    font-size: 11px
+    justify-content: center
+    height: 16px
+    left: auto
+    min-width: 16px
+    position: absolute
+    right: 0
+    transform: translate(50%, -50%)
+    top: 0
+
+  &__cost
+    align-items: center
+    display: flex
+    font-size: 18px
+
+    @media(max-width: 991px)
+      display: none
+
+  &__currency
+    margin-left: 5px
+    width: 10px

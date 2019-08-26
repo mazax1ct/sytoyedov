@@ -1,0 +1,26 @@
+.button
+  background-color: transparent
+  border: none
+  border-radius: 0
+  cursor: pointer
+  display: inline-block
+  font-family: 'HeliosC', Arial, sans-serif
+  text-decoration: none
+  text-align: center
+  vertical-align: middle
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none
+
+  &--type_1
+    background: url('../images/buttons/btn-1.png') no-repeat 0 0 transparent
+    color: #fff
+    font-size: 14px
+    height: 48px
+    padding: 0 10px 0 0
+    width: 144px
