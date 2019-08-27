@@ -1,3 +1,18 @@
+.social-links
+  display: flex
+
+  @media(max-width: 991px)
+    justify-content: center
+
+  &--small
+    .social-link
+      @media(min-width: 768px)
+        height: 40px
+        width: 40px
+
+      @media(min-width: 1200px)
+        margin-right: 10px
+
 .social-link
   display: block
   height: 58px

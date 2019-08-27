@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Регистрация</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body>
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content page-content--inner">
+      <div class="container">
+        <h1>Регистрация</h1>
+        <div class="reg-form form form--small">
+          <form action="">
+            <label class="form__label" for="name">
+              <span class="form__label-text">Имя</span>
+              <input id="name" class="input" name="name" type="text" value="">
+            </label>
+            <label class="form__label" for="email">
+              <span class="form__label-text">E-mail</span>
+              <input id="email" class="input" name="email" type="text" value="">
+            </label>
+            <label class="form__label" for="pass">
+              <span class="form__label-text">Пароль</span>
+              <input id="pass" class="input" name="pass" type="password" value="">
+            </label>
+            <label class="form__label" for="repass">
+              <span class="form__label-text">Повторно пароль</span>
+              <input id="repass" class="input" name="repass" type="password" value="">
+            </label>
+            <div class="form__button-block">
+              <button class="button button--type_3" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+          </form>
+        </div>
+        <p class="text-center">
+          <a href="auth.html">Авторизация</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

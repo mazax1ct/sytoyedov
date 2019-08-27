@@ -1,6 +1,15 @@
 body
+  color: #2e2e2d
   font-family: 'HeliosC', Arial, sans-serif
+  font-size: 14px
   line-height: 1.045
+
+a
+  color: #2e2e2d
+
+.big-text
+  @media(min-width: 1200px)
+    font-size: 18px
 
 h1,.h1,
 h2,.h2,
@@ -8,12 +17,11 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6
-  color: #2e2e2d
   font-family: 'Espuma Pro', Arial, sans-serif
   font-size: 20px
   font-weight: 700
   line-height: 1.285
-  margin-bottom: 40px
+  margin-bottom: 25px
   margin-top: 0
   text-align: center
   text-transform: uppercase
@@ -23,6 +31,7 @@ h6,.h6
 
   @media(min-width: 992px)
     font-size: 28px
+    margin-bottom: 40px
 
 p,
 ul,
@@ -34,6 +43,9 @@ table,
 
   &:last-child
     margin-bottom: 0
+
+  @media(min-width: 992px)
+    margin-bottom: 30px
 
 table
   border-collapse: collapse
@@ -52,3 +64,11 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+.bordered-block
+  border: 5px solid #d61c38
+  display: block
+  padding: 10px 15px
+
+.bordered-image
+  border: 3px solid #c9c9c9

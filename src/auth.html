@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Авторизация</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body>
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content page-content--inner">
+      <div class="container">
+        <h1>Авторизация</h1>
+        <div class="auth-form form form--small">
+          <form action="">
+            <label class="form__label" for="email">
+              <span class="form__label-text">E-mail</span>
+              <input id="email" class="input" name="email" type="text" value="">
+            </label>
+            <label class="form__label" for="pass">
+              <span class="form__label-text">Пароль</span>
+              <input id="pass" class="input" name="pass" type="password" value="">
+            </label>
+            <div class="form__button-block">
+              <button class="button button--type_2" type="submit">ВОЙТИ</button>
+            </div>
+          </form>
+        </div>
+        <p class="text-center">
+          <a href="forgot.html">Забыли пароль?</a><br><br>
+          <a href="register.html">Регистрация</a>
+        </p>
+        <div class="social-auth">
+          <p class="social-auth__title">ВЫ МОЖЕТЕ ВОЙТИ НА САЙТ,<br> ИСПОЛЬЗУЯ СВОЙ АККАУНТ В СОЦИАЛЬНЫХ СЕТЯХ</p>
+          <div class="social-auth__list">
+            <a class="social-link" href="#" title="facebook.com" target="_blank">
+              <img src="images/icons/fb--red.png" alt="facebook.com">
+            </a>
+            <a class="social-link" href="#" title="twitter.com" target="_blank">
+              <img src="images/icons/tw--red.png" alt="twitter.com">
+            </a>
+            <a class="social-link" href="#" title="google.com" target="_blank">
+              <img src="images/icons/gplus--red.png" alt="google.com">
+            </a>
+            <a class="social-link" href="#" title="instagram.com" target="_blank">
+              <img src="images/icons/inst--red.png" alt="instagram.com">
+            </a>
+            <a class="social-link" href="#" title="vk.com" target="_blank">
+              <img src="images/icons/vk--red.png" alt="vk.com">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

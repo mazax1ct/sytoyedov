@@ -1,0 +1,40 @@
+.order
+  border-bottom: 1px dotted #ffd729
+  margin-bottom: 15px
+  padding: 25px 15px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__title
+    font-size: 15px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+  &__inner
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+
+  &__left
+    @media(min-width: 768px)
+      width: 57%
+
+  &__item
+    font-size: 12px
+
+    @media(min-width: 768px)
+      display: flex
+
+  &__item-title
+    font-weight: 700
+    text-transform: uppercase
+
+  &__right
+    @media(min-width: 768px)
+      width: 31%
+
+  &__cost-block
+    align-items: center
+    display: flex
+    justify-content: space-between
