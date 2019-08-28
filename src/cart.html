@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Корзина</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body>
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content page-content--inner">
+      <div class="container">
+        <h1>Корзина</h1>
+        <div class="cart-captions">
+          <div class="cart-captions__title">наименование</div>
+          <div class="cart-captions__period">количество дней</div>
+          <div class="cart-captions__persons">количество человек</div>
+          <div class="cart-captions__cost">цена</div>
+          <div class="cart-captions__delete"></div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__info-block">
+            <div class="cart-item__image"><img src="images/content/img_8.jpg" alt=""></div>
+            <div class="cart-item__title-block">
+              <div class="cart-item__title">основное меню<br> Medium<br> (первое+второе)</div>
+              <div class="cart-item__set">набор №1</div>
+            </div>
+          </div>
+          <div class="cart-item__period-block">
+            <div class="cart-item__period-title">количество дней</div>
+            <div class="period">
+              <button class="perion-button" type="button"><span class="perion-button__num">3</span></button>
+              <button class="perion-button is-active" type="button"><span class="perion-button__num">5</span></button>
+              <button class="perion-button" type="button"><span class="perion-button__num">7</span></button>
+            </div>
+          </div>
+          <div class="cart-item__persons-block">
+            <div class="cart-item__persons-title">количество человек</div>
+            <div class="qnt">
+              <button class="qnt-button" type="button"><span class="qnt-button__num">-</span></button>
+              <input class="input" type="text" value="3">
+              <button class="qnt-button" type="button"><span class="qnt-button__num">+</span></button>
+            </div>
+          </div>
+          <div class="cart-item__cost-block">
+            13 500 руб.
+          </div>
+          <div class="cart-item__delete-block">
+            <a class="cart-item__delete" href="#" title="Удалить"><span class="cart-item__delete-x"></span></a>
+          </div>
+        </div>
+        <div class="cart-buttons">
+          <a class="button button--type_5" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+          <a class="button button--type_6" href="#">БЫСТРЫЙ ЗАКАЗ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

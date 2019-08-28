@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>История заказов</title>
+  <title>Личный кабинет</title>
 
   <meta name="description" content="">
 
@@ -22,7 +22,35 @@
     //= template/header.html
     <div class="page-content page-content--inner">
       <div class="container">
-        <h1>История заказов</h1>
+        <h1>Регистрационные данные</h1>
+        <div class="user-data form">
+          <form action="">
+            <label class="form__label" for="last_name">
+              <span class="form__label-text">Фамилия</span>
+              <input id="last_name" class="input" name="last_name" type="text" value="">
+            </label>
+            <label class="form__label" for="name">
+              <span class="form__label-text">Имя</span>
+              <input id="name" class="input" name="name" type="text" value="">
+            </label>
+            <label class="form__label" for="email">
+              <span class="form__label-text">E-mail</span>
+              <input id="email" class="input" name="email" type="text" value="">
+            </label>
+            <label class="form__label" for="pass">
+              <span class="form__label-text">Пароль</span>
+              <input id="pass" class="input" name="pass" type="password" value="">
+            </label>
+            <label class="form__label" for="repass">
+              <span class="form__label-text">Повторить пароль</span>
+              <input id="repass" class="input" name="repass" type="password" value="">
+            </label>
+            <div class="form__button-block">
+              <button class="button button--type_2" type="submit">ИЗМЕНИТЬ</button>
+            </div>
+          </form>
+        </div>
+        <h2>последние заказы</h2>
         <div class="order">
           <p class="order__title">заказ №1345</p>
           <div class="order__inner">
@@ -98,6 +126,7 @@
             </div>
           </div>
         </div>
+        <p class="orders-history"><a href="orders.html">Вся история заказов</a></p>
       </div>
     </div>
   </div>

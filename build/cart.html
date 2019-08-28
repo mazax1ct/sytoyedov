@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>История заказов</title>
+  <title>Корзина</title>
 
   <meta name="description" content="">
 
@@ -43,81 +43,48 @@
     </header>
     <div class="page-content page-content--inner">
       <div class="container">
-        <h1>История заказов</h1>
-        <div class="order">
-          <p class="order__title">заказ №1345</p>
-          <div class="order__inner">
-            <div class="order__left">
-              <div class="order__item">
-                <div class="order__item-title">основное меню<br> Medium (первое+второе)</div>
-                <div class="order__item-time">5 дней / 3 чел.</div>
-                <div class="order__item-price">16 000 руб.</div>
-              </div>
-              <div class="order__set">набор №1</div>
-              <div class="order__cost-block">
-                <div class="order__cost-text">Итого:</div>
-                <div class="order__cost">16 300 руб.</div>
-              </div>
+        <h1>Корзина</h1>
+        <div class="cart-captions">
+          <div class="cart-captions__title">наименование</div>
+          <div class="cart-captions__period">количество дней</div>
+          <div class="cart-captions__persons">количество человек</div>
+          <div class="cart-captions__cost">цена</div>
+          <div class="cart-captions__delete"></div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__info-block">
+            <div class="cart-item__image"><img src="images/content/img_8.jpg" alt=""></div>
+            <div class="cart-item__title-block">
+              <div class="cart-item__title">основное меню<br> Medium<br> (первое+второе)</div>
+              <div class="cart-item__set">набор №1</div>
             </div>
-            <div class="order__right">
-              <p>Оплата: <b>Наличными курьеру</b></p>
-              <p>Статус: <b>Принят</b></p>
-              <p class="order__controls">
-                <a href="#">Отменить заказ</a>
-                <a href="#">Повторить заказ</a>
-              </p>
+          </div>
+          <div class="cart-item__period-block">
+            <div class="cart-item__period-title">количество дней</div>
+            <div class="period">
+              <button class="perion-button" type="button"><span class="perion-button__num">3</span></button>
+              <button class="perion-button is-active" type="button"><span class="perion-button__num">5</span></button>
+              <button class="perion-button" type="button"><span class="perion-button__num">7</span></button>
             </div>
+          </div>
+          <div class="cart-item__persons-block">
+            <div class="cart-item__persons-title">количество человек</div>
+            <div class="qnt">
+              <button class="qnt-button" type="button"><span class="qnt-button__num">-</span></button>
+              <input class="input" type="text" value="3">
+              <button class="qnt-button" type="button"><span class="qnt-button__num">+</span></button>
+            </div>
+          </div>
+          <div class="cart-item__cost-block">
+            13 500 руб.
+          </div>
+          <div class="cart-item__delete-block">
+            <a class="cart-item__delete" href="#" title="Удалить"><span class="cart-item__delete-x"></span></a>
           </div>
         </div>
-        <div class="order">
-          <p class="order__title">заказ №1244</p>
-          <div class="order__inner">
-            <div class="order__left">
-              <div class="order__item">
-                <div class="order__item-title">основное меню<br> Medium (первое+второе)</div>
-                <div class="order__item-time">5 дней / 3 чел.</div>
-                <div class="order__item-price">16 000 руб.</div>
-              </div>
-              <div class="order__set">набор №1</div>
-              <div class="order__cost-block">
-                <div class="order__cost-text">Итого:</div>
-                <div class="order__cost">16 300 руб.</div>
-              </div>
-            </div>
-            <div class="order__right">
-              <p>Оплата: <b>Online через Яндекс.Кассу</b></p>
-              <p>Статус: <b>Принят</b></p>
-              <p class="order__controls">
-                <a href="#">Отменить заказ</a>
-                <a href="#">Повторить заказ</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="order">
-          <p class="order__title">заказ №1345</p>
-          <div class="order__inner">
-            <div class="order__left">
-              <div class="order__item">
-                <div class="order__item-title">основное меню<br> Medium (первое+второе)</div>
-                <div class="order__item-time">5 дней / 3 чел.</div>
-                <div class="order__item-price">16 000 руб.</div>
-              </div>
-              <div class="order__set">набор №1</div>
-              <div class="order__cost-block">
-                <div class="order__cost-text">Итого:</div>
-                <div class="order__cost">16 300 руб.</div>
-              </div>
-            </div>
-            <div class="order__right">
-              <p>Оплата: <b>Наличными курьеру</b></p>
-              <p>Статус: <b>Принят</b></p>
-              <p class="order__controls">
-                <a href="#">Отменить заказ</a>
-                <a href="#">Повторить заказ</a>
-              </p>
-            </div>
-          </div>
+        <div class="cart-buttons">
+          <a class="button button--type_5" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+          <a class="button button--type_6" href="#">БЫСТРЫЙ ЗАКАЗ</a>
         </div>
       </div>
     </div>

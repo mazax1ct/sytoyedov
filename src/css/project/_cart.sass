@@ -1,0 +1,217 @@
+.cart-captions
+  color: #8f8f8f
+  display: flex
+  font-size: 18px
+  font-weight: 700
+  padding-bottom: 20px
+  text-align: center
+  text-transform: uppercase
+
+  @media(max-width: 991px)
+    display: none
+
+  @media(min-width: 1200px)
+    padding-bottom: 35px
+
+  &__title
+    width: 30%
+
+  &__period
+    width: 20%
+
+  &__persons
+    width: 25%
+
+  &__cost
+    width: 15%
+
+  &__delete
+    min-width: 5%
+
+.cart-item
+  border-bottom: 1px dotted #ffd729
+  border-top: 1px dotted #ffd729
+  padding-top: 20px
+  padding-bottom: 20px
+  position: relative
+
+  @media(min-width: 480px)
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1200px)
+    padding-top: 45px
+    padding-bottom: 45px
+
+  &__info-block
+    align-items: center
+    display: flex
+    margin-bottom: 15px
+
+    @media(min-width: 480px)
+      width: 100%
+
+    @media(min-width: 992px)
+      margin-bottom: 0
+      padding-left: 15px
+      padding-right: 15px
+      width: 30%
+
+  &__image
+    width: 100px
+
+    @media(min-width: 480px)
+      min-width: 180px
+
+    @media(min-width: 992px) and (max-width: 1199px)
+      min-width: 100px
+
+  &__title-block
+    font-size: 15px
+    font-weight: 700
+    padding-left: 15px
+    text-transform: uppercase
+
+    @media(min-width: 480px)
+      padding-left: 30px
+
+  &__title
+    margin-bottom: 5px
+
+  &__set
+    color: #8f8f8f
+
+  &__period-block
+    margin-bottom: 15px
+
+    @media(min-width: 480px)
+      margin-bottom: 0
+      padding-left: 5px
+      padding-right: 5px
+      width: 30%
+
+    @media(min-width: 992px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 20%
+
+  &__period-title
+    color: #8f8f8f
+    font-size: 15px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 992px)
+      display: none
+
+  &__persons-block
+    margin-bottom: 15px
+
+    @media(min-width: 480px)
+      margin-bottom: 0
+      padding-left: 5px
+      padding-right: 5px
+      width: 40%
+
+    @media(min-width: 992px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 25%
+
+  &__persons-title
+    color: #8f8f8f
+    font-size: 15px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 992px)
+      display: none
+
+  &__cost-block
+    text-align: center
+    white-space: nowrap
+
+    @media(min-width: 480px)
+      padding-left: 5px
+      padding-right: 5px
+      width: 30%
+
+    @media(min-width: 992px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 15%
+
+  &__delete-block
+    @media(min-width: 992px)
+      padding-left: 15px
+      padding-right: 15px
+      min-width: 5%
+
+  &__delete
+    align-items: center
+    display: inline-flex
+    height: 40px
+    justify-content: center
+    width: 40px
+
+    @media(max-width: 991px)
+      left: auto
+      position: absolute
+      right: 0
+      top: 0
+
+  &__delete-x
+    border: 2px solid #2e2e2d
+    border-radius: 50%
+    display: inline-block
+    height: 26px
+    position: relative
+    width: 26px
+
+    &::after,
+    &::before
+      background-color: #2e2e2d
+      content: ''
+      height: 1px
+      left: 50%
+      position: absolute
+      top: 50%
+      width: 12px
+
+    &::after,
+    &::before
+      transform: translate(-50%, -50%) rotate(45deg)
+
+    &::after
+      transform: translate(-50%, -50%) rotate(-45deg)
+
+.cart-buttons
+  margin-top: 20px
+  text-align: center
+
+  @media(min-width: 480px)
+    display: flex
+    justify-content: center
+
+  @media(min-width: 768px)
+    justify-content: flex-end
+    margin-top: 35px
+
+  .button
+    margin-bottom: 10px
+
+    @media(min-width: 480px)
+      margin-left: 10px
+      margin-right: 10px
+      margin-bottom: 0
+
+    @media(min-width: 768px)
+      margin-right: 0
+      margin-left: 0
+
+    &:first-child
+      @media(min-width: 768px)
+        margin-right: 70px
