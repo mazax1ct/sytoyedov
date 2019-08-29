@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Оформление заказа</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body>
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content page-content--inner">
+      <div class="container">
+        <h1>Оформление заказа</h1>
+        <div class="form">
+          <form action="">
+            <div class="form__section">
+              <p class="form__title">1. выберите город доставки</p>
+              <label class="form__label" for="city">
+                <span class="form__label-text form__label-text--small">Город</span>
+                <input id="city" class="input" name="city" type="text" value="">
+              </label>
+            </div>
+            <div class="form__section">
+              <p class="form__title">2. способ доставки</p>
+              <ul class="form__radio-list">
+                <li>
+                  <label class="radio-label" for="delivey_1">
+                    <input id="delivey_1" type="radio" name="delivery" value="courier" checked>
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Курьерская доставка</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form__section">
+              <p class="form__title">3. способ оплаты</p>
+              <ul class="form__radio-list">
+                <li>
+                  <label class="radio-label" for="pay_1">
+                    <input id="pay_1" type="radio" name="pay" value="nal">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Наличными курьеру</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-label" for="pay_2">
+                    <input id="pay_2" type="radio" name="pay" value="anal">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Online через Яндекс.Кассу</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form__section">
+              <p class="form__title">4. ваши данные</p>
+              <label class="form__label" for="name">
+                <span class="form__label-text">Имя и фамилия</span>
+                <input id="name" class="input" name="name" type="text" value="">
+              </label>
+              <label class="form__label" for="phone">
+                <span class="form__label-text">Телефон</span>
+                <input id="phone" class="input" name="phone" type="text" value="">
+              </label>
+              <label class="form__label" for="email">
+                <span class="form__label-text">E-mail</span>
+                <input id="email" class="input" name="email" type="text" value="">
+              </label>
+              <label class="form__label" for="address">
+                <span class="form__label-text">Адрес доставки</span>
+                <input id="address" class="input" name="address" type="text" value="">
+              </label>
+            </div>
+            <div class="form__section">
+              <p class="form__title">5. ваш заказ</p>
+              <div class="checkout-item">
+                <div class="checkout-item__info-block">
+                  <div class="checkout-item__image"><img src="images/content/img_8.jpg" alt=""></div>
+                  <div class="checkout-item__title-block">
+                    <div class="checkout-item__title">основное меню<br> Medium<br> (первое+второе)</div>
+                    <div class="checkout-item__set">набор №1</div>
+                    <div class="checkout-item__set">Количество дней: 5</div>
+                  </div>
+                </div>
+                <div class="checkout-item__persons-block">х 3 чел.</div>
+                <div class="checkout-item__cost-block">13 500 руб.</div>
+              </div>
+              <p class="checkout-summ"><b>сумма покупки:</b> 52 000 руб.</p>
+              <p class="checkout-summ"><b>доставка:</b> 0 руб.</p>
+            </div>
+            <div class="form__section">
+              <p class="form__title">6. подтверждение</p>
+              <label class="form__label form__label--align_top" for="comment">
+                <span class="form__label-text">Комментарий</span>
+                <textarea id="comment" class="textarea"></textarea>
+              </label>
+              <div class="form__label">
+                <span class="form__label-text"></span>
+                <label class="checkbox-label terms" for="terms">
+                  <input id="terms" type="checkbox" name="terms" value="">
+                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-text">Оформляя заказ я соглашаюсь с правилами покупки</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__button-block">
+              <button class="button button--type_6" type="submit">ПОДТВЕРЖДЕНИЕ ЗАКАЗА</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

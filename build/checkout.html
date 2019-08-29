@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Оформление заказа</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner container">
+        <a class="logo" href="main.html"><img src="images/logo.png" alt="Сытоедов"></a>
+        <button class="js-menu-opener menu-opener"><span class="menu-opener__burger"></span></button>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link is-active" href="#">ОСНОВНОЕ МЕНЮ</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">РАЦИОНЫ ПИТАНИЯ</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="about.html">О КОМПАНИИ</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <div class="header__cart">
+          <a class="header-cart" href="cart.html" title="В корзину">
+            <span class="header-cart__icon">
+              <span class="header-cart__qnt">01</span>
+            </span>
+            <span class="header-cart__cost">00,0 <img class="header-cart__currency" src="images/icons/rub.png" alt="руб."></span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="page-content page-content--inner">
+      <div class="container">
+        <h1>Оформление заказа</h1>
+        <div class="form">
+          <form action="">
+            <div class="form__section">
+              <p class="form__title">1. выберите город доставки</p>
+              <label class="form__label" for="city">
+                <span class="form__label-text form__label-text--small">Город</span>
+                <input id="city" class="input" name="city" type="text" value="">
+              </label>
+            </div>
+            <div class="form__section">
+              <p class="form__title">2. способ доставки</p>
+              <ul class="form__radio-list">
+                <li>
+                  <label class="radio-label" for="delivey_1">
+                    <input id="delivey_1" type="radio" name="delivery" value="courier" checked>
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Курьерская доставка</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form__section">
+              <p class="form__title">3. способ оплаты</p>
+              <ul class="form__radio-list">
+                <li>
+                  <label class="radio-label" for="pay_1">
+                    <input id="pay_1" type="radio" name="pay" value="nal">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Наличными курьеру</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-label" for="pay_2">
+                    <input id="pay_2" type="radio" name="pay" value="anal">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Online через Яндекс.Кассу</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form__section">
+              <p class="form__title">4. ваши данные</p>
+              <label class="form__label" for="name">
+                <span class="form__label-text">Имя и фамилия</span>
+                <input id="name" class="input" name="name" type="text" value="">
+              </label>
+              <label class="form__label" for="phone">
+                <span class="form__label-text">Телефон</span>
+                <input id="phone" class="input" name="phone" type="text" value="">
+              </label>
+              <label class="form__label" for="email">
+                <span class="form__label-text">E-mail</span>
+                <input id="email" class="input" name="email" type="text" value="">
+              </label>
+              <label class="form__label" for="address">
+                <span class="form__label-text">Адрес доставки</span>
+                <input id="address" class="input" name="address" type="text" value="">
+              </label>
+            </div>
+            <div class="form__section">
+              <p class="form__title">5. ваш заказ</p>
+              <div class="checkout-item">
+                <div class="checkout-item__info-block">
+                  <div class="checkout-item__image"><img src="images/content/img_8.jpg" alt=""></div>
+                  <div class="checkout-item__title-block">
+                    <div class="checkout-item__title">основное меню<br> Medium<br> (первое+второе)</div>
+                    <div class="checkout-item__set">набор №1</div>
+                    <div class="checkout-item__set">Количество дней: 5</div>
+                  </div>
+                </div>
+                <div class="checkout-item__persons-block">х 3 чел.</div>
+                <div class="checkout-item__cost-block">13 500 руб.</div>
+              </div>
+              <p class="checkout-summ"><b>сумма покупки:</b> 52 000 руб.</p>
+              <p class="checkout-summ"><b>доставка:</b> 0 руб.</p>
+            </div>
+            <div class="form__section">
+              <p class="form__title">6. подтверждение</p>
+              <label class="form__label form__label--align_top" for="comment">
+                <span class="form__label-text">Комментарий</span>
+                <textarea id="comment" class="textarea"></textarea>
+              </label>
+              <div class="form__label">
+                <span class="form__label-text"></span>
+                <label class="checkbox-label terms" for="terms">
+                  <input id="terms" type="checkbox" name="terms" value="">
+                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-text">Оформляя заказ я соглашаюсь с правилами покупки</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__button-block">
+              <button class="button button--type_6" type="submit">ПОДТВЕРЖДЕНИЕ ЗАКАЗА</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3">
+          <div class="footer__logo"><img src="images/logo--white.png" alt="Сытоедов"></div>
+          <p class="footer__title">Есть вопросы?</p>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Оплата и доставка</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гарантия и возврат</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Правовая информация</a></li>
+          </ul>
+        </div>
+        <div class="footer__center col-md-4">
+          <ul class="footer-menu2">
+            <li class="footer-menu2__item"><a class="footer-menu2__link" href="about.html">О нас</a></li>
+            <li class="footer-menu2__item"><a class="footer-menu2__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="footer-social">
+            <p class="footer-social__title">мы в социальных сетях:</p>
+            <div class="footer-social__list">
+              <a class="social-link" href="#" title="vk.com" target="_blank">
+                <img src="images/icons/vk.png" alt="vk.com">
+              </a>
+              <a class="social-link" href="#" title="instagram.com" target="_blank">
+                <img src="images/icons/inst.png" alt="instagram.com">
+              </a>
+              <a class="social-link" href="#" title="facebook.com" target="_blank">
+                <img src="images/icons/fb.png" alt="facebook.com">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right col-md-4 col-lg-3 offset-lg-1">
+          <div class="subscribe">
+            <p class="subscribe__title">Узнавайте о новостях и акциях первыми!</p>
+            <form action="">
+              <label class="subscribe__label" for="subscribe">
+                <input id="subscribe" class="subscribe__input" name="subscribe" type="text" value="" placeholder="e-mail:">
+              </label>
+              <button class="button button--type_1" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="copyrights">© «Сытоедов», 2019</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

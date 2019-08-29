@@ -15,9 +15,23 @@ $(document).ready(function () {
       slidesToShow: 1,
       infinite: true,
       arrows: false,
-      //prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
-      //nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
       dots: true
+    });
+  }
+
+  //главный баннер-слайдер
+  if ($('.js-set-slider').length) {
+    $('.js-set-slider').slick({
+      adaptiveHeight: true,
+      fade: true,
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"></button>',
+      nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"></button>',
+      dots: false
     });
   }
 });

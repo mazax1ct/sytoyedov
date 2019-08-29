@@ -1,0 +1,76 @@
+.checkout-item
+  align-items: center
+  border-bottom: 1px dotted #ffd729
+  display: flex
+  font-size: 11px
+  flex-wrap: wrap
+  margin-bottom: 20px
+  padding-bottom: 20px
+  position: relative
+  text-transform: uppercase
+
+  &__info-block
+    align-items: center
+    display: flex
+    margin-bottom: 15px
+    width: 100%
+
+    @media(min-width: 480px)
+      margin-bottom: 0
+      padding-right: 15px
+      width: 50%
+
+  &__image
+    width: 120px
+
+  &__title-block
+    font-weight: 700
+    padding-left: 15px
+
+    @media(min-width: 768px)
+      padding-left: 30px
+
+  &__title
+    color: #303030
+    margin-bottom: 5px
+
+  &__set
+    color: #8f8f8f
+
+  &__persons-block
+    color: #303030
+    text-align: center
+    width: 50%
+
+    @media(min-width: 480px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 25%
+
+  &__cost-block
+    color: #303030
+    text-align: center
+    white-space: nowrap
+    width: 50%
+
+    @media(min-width: 480px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 25%
+
+.checkout-summ
+  color: #303030
+  display: flex
+  font-size: 11px
+  justify-content: space-between
+  margin-bottom: 10px
+  padding-left: 15px
+  padding-right: 15px
+
+  @media(min-width: 480px)
+    justify-content: flex-end
+
+  b
+    min-width: 145px
+    padding-right: 15px
+    text-transform: uppercase

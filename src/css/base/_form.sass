@@ -1,4 +1,5 @@
 .form
+  color: #5a5a5a
   max-width: 540px
   margin-left: auto
   margin-right: auto
@@ -9,6 +10,16 @@
     .form__label-text
       min-width: 120px
 
+  &__section
+    margin-bottom: 30px
+
+  &__title
+    font-family: 'Espuma Pro', Arial, sans-serif
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 15px
+    text-transform: uppercase
+
   &__label
     display: block
     margin-bottom: 15px
@@ -16,6 +27,10 @@
     @media(min-width: 768px)
       align-items: center
       display: flex
+
+    &--align_top
+      @media(min-width: 768px)
+        align-items: flex-start
 
   &__label-text
     color: #5a5a5a
@@ -26,6 +41,26 @@
 
     @media(min-width: 768px)
       margin-bottom: 0
+
+    &--small
+      min-width: 70px
+
+  &__radio-list
+    list-style: none
+    padding-left: 0
+
+    @media(min-width: 768px)
+      padding-left: 70px
+
+    li
+      margin-bottom: 15px
+
+      &:last-child
+        margin-bottom: 0
+
+  .terms
+    font-size: 11px
+    line-height: 14px
 
   &__button-block
     margin-top: 35px
