@@ -23,7 +23,6 @@ $(document).ready(function () {
   if ($('.js-set-slider').length) {
     $('.js-set-slider').slick({
       adaptiveHeight: true,
-      fade: true,
       auto: false,
       mobileFirst: true,
       slidesToShow: 1,
@@ -31,7 +30,25 @@ $(document).ready(function () {
       arrows: true,
       prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"></button>',
       nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"></button>',
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            adaptiveHeight: false
+          }
+        }
+      ]
     });
   }
+
+  //смена набора на главной
+  $('.js-set-order-opener').click(function () {
+    $('.set-order__block').removeClass('is-active');
+    $(this).prev('.set-order__block').addClass('is-active');
+    $('.set-order__button').removeClass('is-active');
+    $(this).addClass('is-active');
+    $('.set-order__slider-block.is-active').find('.js-set-slider').slick('setPosition');
+    return false;
+  });
 });

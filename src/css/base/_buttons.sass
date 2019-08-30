@@ -80,12 +80,26 @@
       display: block
 
   &--type_8
-    background: url('../images/buttons/btn-8.png') no-repeat 0 0 transparent
-    font-size: 28px
-    height: 86px
-    padding: 0 20px 0 0
-    text-align: center
-    width: 252px
+    background: url('../images/buttons/btn-1.png') no-repeat 0 0 / 205px 70px transparent
+    color: #2e2e2d
+    font-size: 14px
+    height: 70px
+    padding: 0 16px 0 0
+    width: 205px
+
+    @media(min-width: 768px)
+      background: url('../images/buttons/btn-1.png') no-repeat 0 0 transparent
+      height: 48px
+      padding: 0 12px 0 0
+      width: 144px
+
+    @media(min-width: 1200px)
+      background: url('../images/buttons/btn-8.png') no-repeat 0 0 transparent
+      font-size: 28px
+      height: 86px
+      padding: 0 20px 0 0
+      text-align: center
+      width: 252px
 
 a.button
   align-items: center

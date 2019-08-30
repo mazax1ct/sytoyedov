@@ -1,12 +1,69 @@
 .type-row
   margin-bottom: 25px
 
+  & > div
+    @media(max-width: 767px)
+      margin-bottom: 10px
+
 .set-order
   margin-bottom: 45px
 
+  &__title
+    position: relative
+
+    &::before,
+    &::after
+      @media(min-width: 1200px)
+        border-top: 1px dotted #b7031e
+        content: ''
+        height: 170px
+        position: absolute
+        top: 50%
+        width: 290px
+
+    &::before
+      @media(min-width: 1200px)
+        border-left: 1px dotted #b7031e
+        left: 0
+
+    &::after
+      @media(min-width: 1200px)
+        border-right: 1px dotted #b7031e
+        left: auto
+        right: 0
+
   &__block
     border: 6px solid #d51b37
+    margin-bottom: 10px
     padding: 25px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__slider-block
+    display: none
+
+    &.is-active
+      display: block
+
+  &__button
+    background-color: #b7031e
+    border: none
+    border-radius: 0
+    color: #fff
+    cursor: pointer
+    display: block
+    font-family: 'Espuma Pro', Arial, sans-serif
+    font-size: 28px
+    font-weight: 700
+    height: 57px
+    margin-bottom: 10px
+    padding: 0
+    text-align: center
+    width: 100%
+
+    &.is-active
+      display: none
 
 .order-form
   text-align: center
@@ -17,8 +74,14 @@
     text-align: center
     text-transform: uppercase
 
+    @media(min-width: 768px) and (max-width: 1199px)
+      font-size: 14px
+
   &__result
-    margin-bottom: 65px
+    margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 65px
 
     .order-form__title
       margin-bottom: 5px
@@ -27,12 +90,22 @@
     font-size: 28px
     margin-bottom: 5px
     text-transform: uppercase
+    white-space: nowrap
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      font-size: 18px
 
   .period
-    margin-bottom: 50px
+    margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 50px
 
   .qnt
-    margin-bottom: 50px
+    margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 50px
 
     .input
       font-size: 27px
@@ -45,34 +118,69 @@
 .set-slider
   &__title
     font-family: 'Espuma Pro', Arial, sans-serif
-    font-size: 36px
+    font-size: 16px
     font-weight: 700
-    margin-left: -80px
-    margin-bottom: 60px
+
+    @media(min-width: 768px)
+      font-size: 24px
+
+    @media(min-width: 1200px)
+      font-size: 36px
+      margin-left: -80px
+      margin-bottom: 60px
 
   &__subtitle
     font-family: 'Espuma Pro', Arial, sans-serif
-    font-size: 20px
+    font-size: 14px
     font-weight: 700
     margin-top: 10px
     margin-bottom: 10px
     text-align: center
     text-transform: uppercase
 
+    @media(min-width: 1200px)
+      font-size: 20px
+
   &__slide
-    display: flex !important
-    flex-direction: column
-    padding-left: 80px
-    padding-right: 80px
+    @media(min-width: 768px)
+      display: flex !important
+      flex-direction: column
+      height: auto
+
+    @media(min-width: 1200px)
+      padding-left: 80px
+      padding-right: 80px
 
     .row
       margin-top: auto
       margin-bottom: auto
 
+      & > div
+        @media(max-width: 767px)
+          margin-top: 10px
+
   .slick-track
-    display: flex
-    height: 100%
+    @media(min-width: 768px)
+      display: flex
+      height: 100%
 
   .slick-prev,
   .slick-next
-    margin-top: 40px
+    @media(min-width: 768px)
+      margin-top: 20px
+
+    @media(min-width: 1200px)
+      margin-top: 40px
+
+    @media(max-width: 1199px)
+      background-size: 30px auto
+      background-position: 50% 50%
+      width: 30px
+
+  .slick-prev
+    @media(max-width: 1199px)
+      left: -25px
+
+  .slick-next
+    @media(max-width: 1199px)
+      right: -25px
