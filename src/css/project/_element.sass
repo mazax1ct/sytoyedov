@@ -9,6 +9,9 @@
   text-align: center
   text-transform: uppercase
 
+  @media(min-width: 768px)
+    margin-bottom: 0
+
   &__image,
   &__title
     display: block
@@ -33,7 +36,11 @@ a.element
   margin-bottom: 30px
 
   @media(min-width: 768px)
-    margin-bottom: 45px
+    margin-bottom: 75px
+
+  &--mb_30
+    @media(min-width: 768px)
+      margin-bottom: 30px
 
   &:last-child
     margin-bottom: 0

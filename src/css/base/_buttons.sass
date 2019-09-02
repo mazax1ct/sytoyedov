@@ -66,18 +66,28 @@
     width: 205px
 
   &--type_7
-    background: url('../images/buttons/btn-7.png') no-repeat 0 0 transparent
+    background: url('../images/buttons/btn-7.png') no-repeat 0 0 / 100% auto transparent
     font-family: 'Espuma Pro', Arial, sans-serif
-    font-size: 15px
+    font-size: 12px
     font-weight: 700
     color: #fff
     height: 74px
+    max-width: 264px
     text-align: center
-    width: 264px
+    width: 100%
+
+    @media(min-width: 768px)
+      padding-bottom: 15px
+
+    @media(min-width: 992px)
+      padding-bottom: 0
 
     .big
-      font-size: 28px
+      font-size: 20px
       display: block
+
+      @media(min-width: 992px)
+        font-size: 28px
 
   &--type_8
     background: url('../images/buttons/btn-1.png') no-repeat 0 0 / 205px 70px transparent

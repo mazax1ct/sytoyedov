@@ -1,0 +1,105 @@
+.js-popup-open
+  cursor: pointer
+
+.popup-wrapper
+  background-color: rgba(0,0,0,0.3)
+  display: none
+  height: 100%
+  left: 0
+  overflow-y: auto
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 100
+
+.product-popup
+  background-color: #fff
+  display: none
+  left: 50%
+  max-width: 640px
+  position: absolute
+  top: 0
+  transform: translateX(-50%)
+  width: 100%
+
+  @media(min-width: 768px)
+    top: 50px
+
+  &__close
+    background: url('../images/product-popup-close.png') no-repeat 50% 50% transparent
+    border: none
+    cursor: pointer
+    height: 40px
+    left: auto
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 40px
+
+  &__title
+    border-bottom: 10px solid #db0032
+    color: #2e2e2d
+    font-family: 'Espuma Pro', Arial, sans-serif
+    font-size: 22px
+    font-weight: 700
+    margin: 0
+    padding: 30px 60px 10px 30px
+    text-transform: uppercase
+
+  &__inner
+    padding: 15px 30px 30px
+
+  .bordered-image
+    border-color: #db0032
+
+.bgu-title
+  font-size: 12px
+  margin-bottom: 10px
+  text-transform: uppercase
+
+.bgu
+  display: flex
+  flex-wrap: wrap
+  font-size: 12px
+  margin-bottom: 15px
+
+  &__item
+    margin-bottom: 5px
+    padding-right: 25px
+
+  &__title
+    color: #7f7f7f
+    margin-bottom: 10px
+    text-transform: uppercase
+
+.ingridients
+  font-size: 12px
+
+  &__title
+    background-color: #db0032
+    color: #fff
+    display: inline-block
+    margin-bottom: 5px
+    padding: 6px 20px
+    text-transform: uppercase
+
+  ul
+    list-style: none
+    margin-bottom: 25px
+    padding-left: 0
+
+  li
+    margin-bottom: 4px
+
+.add-cart
+  align-items: center
+  background-color: #db0032
+  color: #fff
+  font-size: 20px
+  font-weight: 700
+  display: inline-flex
+  height: 28px
+  padding: 5px 10px
+  text-decoration: none
+  img
+    margin-left: 10px

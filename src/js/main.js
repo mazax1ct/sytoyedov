@@ -51,4 +51,76 @@ $(document).ready(function () {
     $('.set-order__slider-block.is-active').find('.js-set-slider').slick('setPosition');
     return false;
   });
+
+  //открытие попапа
+  $('.js-popup-open').click(function () {
+    $('body').toggleClass('overflow');
+    $('.popup-wrapper').fadeIn();
+    $('#' + $(this).attr('data-popup')).fadeIn();
+    return false;
+  });
+
+  //закрытие попапа
+  $('.js-popup-close').click(function () {
+    $('body').toggleClass('overflow');
+    $('.popup').fadeOut();
+    $('.popup-wrapper').fadeOut();
+    return false;
+  });
+
+  //переключение табов наборов
+  $('.js-tab').on('click', function() {
+    $(".js-tab").removeClass("is-active");
+    $(this).addClass("is-active");
+    $('.tab').removeClass("is-active");
+    $('.tab[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
+    return false;
+  });
+
+  //запуск плавающей формы
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 768) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 70
+        });
+      }, 100);
+    }
+
+    //если блок для контента пустой, открепляем
+    if ($(".js-content-with-sticky").length) {
+      if ($('.js-content-with-sticky').html().trim() === '') {
+        $(".js-sticky-block").trigger("sticky_kit:detach");
+      }
+    }
+  }
+});
+
+//открепляем и перезапускаем прилипающий блок при резайзе
+$(window).resize(function() {
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 768) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 70
+        });
+      }, 100);
+    }
+  }
+});
+
+//открепляем и перезапускаем прилипающий блок при повороте устройства
+$(window).on("orientationchange", function(event) {
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 768) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 70
+        });
+      }, 100);
+    }
+  }
 });
