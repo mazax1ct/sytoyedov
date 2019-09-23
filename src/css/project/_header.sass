@@ -1,20 +1,21 @@
 .header
   background-color: #fff
-  position: relative
+  border-bottom: 5px solid #db0032
+  box-shadow: 0 0 5px rgba(0,0,0,0.5)
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 10
 
-  @media(max-width: 991px)
-    border-bottom: 5px solid #db0032
-    box-shadow: 0 0 5px rgba(0,0,0,0.5)
-    left: 0
-    position: fixed
-    top: 0
-    width: 100%
-    z-index: 10
+  @media(min-width: 992px)
+    border-bottom: none
+    padding-bottom: 20px
 
   &::after
     @media(min-width: 992px)
       background-color: #db0032
-      bottom: 0
+      bottom: 20px
       content: ''
       height: 10px
       left: 0
@@ -39,7 +40,7 @@
   &__cart
     margin-left: auto
 
-    @media(max-width: 991px)
+    //@media(max-width: 991px)
       margin-right: auto
 
 .logo
@@ -95,7 +96,7 @@
 
   @media(min-width: 992px)
     height: 78px
-    width: 125px
+    //width: 125px
 
   &__icon
     background: url('../images/icons/cart.png') no-repeat 0 0 / 100% 100% transparent
@@ -130,3 +131,27 @@
   &__currency
     margin-left: 5px
     width: 10px
+
+.personal-link
+  align-items: center
+  color: #d61c38
+  display: flex
+  font-weight: 500
+  justify-content: center
+  height: 40px
+  margin-left: 15px
+  margin-right: 35px
+  text-align: center
+  text-decoration: none
+  width: 40px
+
+  @media(min-width: 375px)
+    margin-right: 50px
+
+  @media(min-width: 992px)
+    height: 78px
+    margin-right: 0
+
+  &__icon
+    height: 27px
+    width: 27px

@@ -83,7 +83,7 @@ $(document).ready(function () {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          offset_top: 70
+          offset_top: 125
         });
       }, 100);
     }
@@ -104,7 +104,7 @@ $(window).resize(function() {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          offset_top: 70
+          offset_top: 125
         });
       }, 100);
     }
@@ -118,7 +118,7 @@ $(window).on("orientationchange", function(event) {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          offset_top: 70
+          offset_top: 125
         });
       }, 100);
     }
